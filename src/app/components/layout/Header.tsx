@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export function Header() {
   const [isDark, setIsDark] = useState(false);
@@ -8,7 +10,7 @@ export function Header() {
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     const theme = savedTheme === 'dark' || (!savedTheme && systemPrefersDark);
     setIsDark(theme);
 
@@ -18,7 +20,7 @@ export function Header() {
   const toggleTheme = () => {
     const newTheme = !isDark;
     setIsDark(newTheme);
-    
+
     if (newTheme) {
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
@@ -29,18 +31,52 @@ export function Header() {
   };
 
   return (
-    <header className="bg-white dark:bg-white text-black dark:text-black shadow-2px dark:shadow-2px">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-semibold text-primary dark:text-primary">
-          Logo
-        </h1>
-        <button
-          onClick={toggleTheme}
-          className="p-2 rounded-lg bg-silver dark:bg-grey-blue text-black dark:text-white hover:bg-grey-blue dark:hover:bg-l-grey transition-colors"
-          aria-label={isDark ? 'Mudar para tema claro' : 'Mudar para tema escuro'}
-        >
-          {isDark ? '☀️' : '🌙'}
-        </button>
+    <header className="bg-white dark:bg-white text-black dark:text-black">
+      <div className="max-w-container mx-auto px-4 py-4 flex justify-between items-center">
+        <Link href="/">
+          <Image
+            src="/images/logo.svg"
+            alt="Nexcent"
+            width={120}
+            height={24}
+            className="h-6 w-auto"
+            priority
+          />
+        </Link>
+        <nav className='w-full max-w-[640px]'>
+          <ul className='flex justify-between w-full items-center'>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/">Service</Link>
+            </li>
+            <li>
+              <Link href="/">Feature</Link>
+            </li>
+            <li>
+              <Link href="/">Product</Link>
+            </li>
+            <li>
+              <Link href="/">Testimonial</Link>
+            </li>
+            <li>
+              <Link href="/">FAQ</Link>
+            </li>
+            <li>
+              <button
+                onClick={toggleTheme}
+                className="p-2 rounded-lg bg-silver dark:bg-grey-blue text-black dark:text-white hover:bg-grey-blue dark:hover:bg-l-grey transition-colors"
+                aria-label={isDark ? 'Mudar para tema claro' : 'Mudar para tema escuro'}
+              >
+                {isDark ? '☀️' : '🌙'}
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <button>Teste</button>
+        </div>
       </div>
     </header>
   );
