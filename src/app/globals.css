@@ -1,7 +1,7 @@
-/* styles/global.css */
 @import "tailwindcss";
 
 @theme {
+  /* Cores */
   /* Neutras */
   --color-black: #14102F;
   --color-d-brey: #4D4D4D;
@@ -36,4 +36,44 @@
   --color-shade-3: #FF3580;
   --color-shade-4: #FF0F68;
   --color-shade-5: #14102F;
+
+  /* Tipografia - Headlines */
+  --font-size-headline-1: 4rem;     
+  --line-height-headline-1: 4.75rem;
+  
+  --font-size-headline-2: 2.25rem;  
+  --line-height-headline-2: 2.75rem;
+  
+  --font-size-headline-3: 1.75rem;  
+  --line-height-headline-3: 2.25rem;
+  
+  --font-size-headline-4: 1.25rem;  
+  --line-height-headline-4: 1.75rem;
+
+  /* Font Weight */
+  --font-weight-semibold: 600;
+}
+
+.headline-1 {
+  font-size: var(--font-size-headline-1);
+  line-height: var(--line-height-headline-1);
+  font-weight: var(--font-weight-semibold);
+}
+
+.headline-2 {
+  font-size: var(--font-size-headline-2);
+  line-height: var(--line-height-headline-2);
+  font-weight: var(--font-weight-semibold);
+}
+
+.headline-3 {
+  font-size: var(--font-size-headline-3);
+  line-height: var(--line-height-headline-3);
+  font-weight: var(--font-weight-semibold);
+}
+
+.headline-4 {
+  font-size: var(--font-size-headline-4);
+  line-height: var(--line-height-headline-4);
+  font-weight: var(--font-weight-semibold);
 }
