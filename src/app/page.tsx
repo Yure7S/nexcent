@@ -1,9 +1,9 @@
-import * as React from 'react';
-
-export default function Home () {
+export default function Home() {
   return (
-    <div>
-      <h1 className='text-secondary'>Home</h1>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="headline-1 text-primary dark:text-primary mb-8">
+        Home
+      </h1>
     </div>
   );
 }
