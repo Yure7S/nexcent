@@ -1,7 +1,39 @@
+/* styles/global.css */
 @import "tailwindcss";
 
 @theme {
-  /* Suas cores personalizadas do Vue */
-  --color-primary: #003E83;
-  --color-secondary: #E70809;
+  /* Neutras */
+  --color-black: #14102F;
+  --color-d-brey: #4D4D4D;
+  --color-grey: #616161;
+  --color-l-grey: #88939E;
+  --color-grey-blue: #ABBED1;
+  --color-silver: #F5F7FA;
+  --color-white: #FFFFFF;
+
+  /* Primárias */
+  --color-primary: #F95894;
+  --color-secondary: #263238;
+  
+  /* Informação */
+  --color-info: #2194F3;
+  
+  /* Ação/Status */
+  --color-warning: #FBC02D;
+  --color-error: #E53835;
+  --color-success: #2E7D31;
+  
+  /* Color Tints */
+  --color-tint-1: #66BB69;
+  --color-tint-2: #81C784;
+  --color-tint-3: #A5D6A7;
+  --color-tint-4: #C8E6C9;
+  --color-tint-5: #E8F5E9;
+
+  /* Color Shades */
+  --color-shade-1: #FF94BC;
+  --color-shade-2: #FF74A8;
+  --color-shade-3: #FF3580;
+  --color-shade-4: #FF0F68;
+  --color-shade-5: #14102F;
 }
