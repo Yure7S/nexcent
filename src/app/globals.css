@@ -1,8 +1,8 @@
+/* src/app/globals.css */
 @import "tailwindcss";
 
 @theme {
-  /* Cores */
-  /* Neutras */
+  /* Cores - Light Mode */
   --color-black: #14102F;
   --color-d-brey: #4D4D4D;
   --color-grey: #616161;
@@ -38,16 +38,13 @@
   --color-shade-5: #14102F;
 
   /* Tipografia - Headlines */
-  --font-size-headline-1: 4rem;     
+  --font-size-headline-1: 4rem;
   --line-height-headline-1: 4.75rem;
-  
-  --font-size-headline-2: 2.25rem;  
+  --font-size-headline-2: 2.25rem;
   --line-height-headline-2: 2.75rem;
-  
-  --font-size-headline-3: 1.75rem;  
+  --font-size-headline-3: 1.75rem;
   --line-height-headline-3: 2.25rem;
-  
-  --font-size-headline-4: 1.25rem;  
+  --font-size-headline-4: 1.25rem;
   --line-height-headline-4: 1.75rem;
 
   /* Font Weight */
@@ -61,6 +58,50 @@
   --shadow-16px: 0 16px 32px rgb(171 190 209 / 0.3);
 }
 
+/* Variáveis para Dark Mode */
+@theme dark {
+  /* Cores - Dark Mode */
+  --color-black: #FFFFFF;
+  --color-white: #14102F;
+  --color-d-brey: #B0B0B0;
+  --color-grey: #9E9E9E;
+  --color-l-grey: #757575;
+  --color-grey-blue: #4A5C6A;
+  --color-silver: #1E1E1E;
+
+  /* Primárias no Dark Mode */
+  --color-primary: #FF74A8;
+  --color-secondary: #CFD8DC;
+  
+  /* Cores semânticas no Dark Mode */
+  --color-info: #64B5F6;
+  --color-warning: #FFD54F;
+  --color-error: #EF5350;
+  --color-success: #4CAF50;
+  
+  /* Tints no Dark Mode */
+  --color-tint-1: #388E3C;
+  --color-tint-2: #4CAF50;
+  --color-tint-3: #66BB6A;
+  --color-tint-4: #81C784;
+  --color-tint-5: #1B5E20;
+
+  /* Shades no Dark Mode */
+  --color-shade-1: #FF3580;
+  --color-shade-2: #FF0F68;
+  --color-shade-3: #E0005A;
+  --color-shade-4: #C4004D;
+  --color-shade-5: #FFFFFF;
+
+  /* Shadows no Dark Mode */
+  --shadow-2px: 0 2px 4px rgb(0 0 0 / 0.6);
+  --shadow-4px: 0 4px 8px rgb(0 0 0 / 0.5);
+  --shadow-6px: 0 6px 12px rgb(0 0 0 / 0.4);
+  --shadow-8px: 0 8px 16px rgb(0 0 0 / 0.5);
+  --shadow-16px: 0 16px 32px rgb(0 0 0 / 0.4);
+}
+
+/* Classes utilitárias para as headlines */
 .headline-1 {
   font-size: var(--font-size-headline-1);
   line-height: var(--line-height-headline-1);
@@ -91,3 +132,17 @@
 .shadow-6px { box-shadow: var(--shadow-6px); }
 .shadow-8px { box-shadow: var(--shadow-8px); }
 .shadow-16px { box-shadow: var(--shadow-16px); }
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode automático baseado na preferência do sistema */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+}
