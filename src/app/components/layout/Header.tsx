@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Button } from '../ui/primary-buttom';
+import { ButtonSize } from '@/enums/buttom.enum';
 
 export function Header() {
   const [isDark, setIsDark] = useState(false);
@@ -66,16 +68,33 @@ export function Header() {
             <li>
               <button
                 onClick={toggleTheme}
-                className="p-2 rounded-lg bg-silver dark:bg-grey-blue text-black dark:text-white hover:bg-grey-blue dark:hover:bg-l-grey transition-colors"
+                className="p-2 hover:cursor-pointer rounded-lg  dark:bg-silver text-d-grey dark:text-l-grey hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-all duration-200 group"
                 aria-label={isDark ? 'Mudar para tema claro' : 'Mudar para tema escuro'}
               >
-                {isDark ? '☀️' : '🌙'}
+                {isDark ? (
+                  <Image
+                    src="/svg/icons/light-theme-icon.svg"
+                    alt="Icone do tema claro"
+                    width={120}
+                    height={24}
+                    className="h-6 w-auto"
+                  />
+                ) : (
+                  <Image
+                    src="/svg/icons/dark-theme-icon.svg"
+                    alt="Icone do tema escuro"
+                    width={120}
+                    height={24}
+                    className="h-6 w-auto"
+                  />
+                )}
               </button>
             </li>
           </ul>
         </nav>
-        <div>
-          <button>Teste</button>
+        <div className='flex gap-3.5'>
+          <Link className='text-primary px-4 py-2.5 text-base' href="/">Login</Link>
+          <Button size={ButtonSize.MD}>Sign up</Button>
         </div>
       </div>
     </header>
