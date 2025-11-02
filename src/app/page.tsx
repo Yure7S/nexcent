@@ -136,15 +136,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section >
-        <div className="max-w-container mx-auto px-10 sm:px-14 py-24 flex items-center gap-12">
-          <div className='hidden lg:block'>
+      <section>
+        <div className="max-w-container mx-auto px-10 lg:px-14 py-24 flex items-center gap-4 lg:gap-12">
+          <div className='hidden md:block'>
             <Image
               src="/images/illustration-02.png"
               alt="Nexcent"
               width={391}
               height={407}
-              className="min-w-[441px]"
+              className="min-w-[441px] -mx-10 lg:mx-0"
               priority
             />
           </div>
