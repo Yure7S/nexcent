@@ -179,6 +179,81 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className='bg-silver'>
+        <div className="max-w-container mx-auto px-10 lg:px-14 py-8 flex-col md:flex-row flex items-center gap-4 lg:gap-12">
+          <div>
+            <Image
+              src="/images/image-04.png"
+              alt="Nexcent"
+              width={391}
+              height={407}
+              className="min-w-[326px]"
+              priority
+            />
+          </div>
+          <div className='max-w-[748px]'>
+            <p className='mt-3 body-2 text-n-grey font-medium sm:mt-4 mb-4'>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+            <h4 className='text-primary mb-2 text-headline-4 font-semibold'>Tim Smith</h4>
+            <p className='body-2 text-n-grey'>British Dragon Boat Racing Association</p>
+            <ul className='flex gap-10 items-center justify-items-center w-fit mt-8'>
+            <li><Link href="/">
+              <Image
+                src="/images/clients/client-01.png"
+                alt="Client"
+                width={48}
+                height={48}
+                priority
+              />
+            </Link></li>
+            <li><Link href="/">
+              <Image
+                src="/images/clients/client-02.png"
+                alt="Client"
+                width={48}
+                height={48}
+                priority
+              />
+            </Link></li>
+            <li><Link href="/">
+              <Image
+                src="/images/clients/client-03.png"
+                alt="Client"
+                width={48}
+                height={48}
+                priority
+              />
+            </Link></li>
+            <li><Link href="/">
+              <Image
+                src="/images/clients/client-04.png"
+                alt="Client"
+                width={48}
+                height={48}
+                priority
+              />
+            </Link></li>
+            <li><Link href="/">
+              <Image
+                src="/images/clients/client-05.png"
+                alt="Client"
+                width={48}
+                height={48}
+                priority
+              />
+            </Link></li>
+            <li><Link href="/">
+              <Image
+                src="/images/clients/client-06.png"
+                alt="Client"
+                width={48}
+                height={48}
+                priority
+              />
+            </Link></li>
+          </ul>
+          </div>
+        </div>
+      </section>
       <section className='pt-12 pb-24'>
         <h2 className='text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Caring is the new marketing</h2>
         <p className='text-n-grey max-w-[628px] mx-auto body-2 text-center mb-10'>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
