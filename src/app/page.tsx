@@ -17,7 +17,7 @@ export default function Home() {
           <div className='hidden lg:block'>
             <Image
               src="/images/ilustration-01.png"
-              alt="Nexcent"
+              alt="Ilustration"
               width={391}
               height={407}
               className="h-[407px] min-w-[391px]"
@@ -30,11 +30,11 @@ export default function Home() {
         <h2 className='text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Our Clients</h2>
         <p className='text-n-grey body-2 text-center mb-10'>We have been working with some Fortune 500+ clients</p>
         <div>
-          <ul className='flex gap-[136px] items-center justify-items-center w-fit mx-auto'>
+          <ul className='flex gap-[136px] items-center justify-items-center w-fit mx-auto mb-16'>
             <li><Link href="/">
               <Image
                 src="/images/clients/client-01.png"
-                alt="Nexcent"
+                alt="Client"
                 width={48}
                 height={48}
                 priority
@@ -43,7 +43,7 @@ export default function Home() {
             <li><Link href="/">
               <Image
                 src="/images/clients/client-02.png"
-                alt="Nexcent"
+                alt="Client"
                 width={48}
                 height={48}
                 priority
@@ -52,7 +52,7 @@ export default function Home() {
             <li><Link href="/">
               <Image
                 src="/images/clients/client-03.png"
-                alt="Nexcent"
+                alt="Client"
                 width={48}
                 height={48}
                 priority
@@ -61,7 +61,7 @@ export default function Home() {
             <li><Link href="/">
               <Image
                 src="/images/clients/client-04.png"
-                alt="Nexcent"
+                alt="Client"
                 width={48}
                 height={48}
                 priority
@@ -70,7 +70,7 @@ export default function Home() {
             <li><Link href="/">
               <Image
                 src="/images/clients/client-05.png"
-                alt="Nexcent"
+                alt="Client"
                 width={48}
                 height={48}
                 priority
@@ -79,13 +79,61 @@ export default function Home() {
             <li><Link href="/">
               <Image
                 src="/images/clients/client-06.png"
-                alt="Nexcent"
+                alt="Client"
                 width={48}
                 height={48}
                 priority
               />
             </Link></li>
           </ul>
+        </div>
+      </section>
+      <section>
+        <h2 className='max-w-[550px] mx-auto leading-headline-2 text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Manage your entire community in a single system</h2>
+        <p className='text-n-grey body-2 text-center mb-4'>Who is Nextcent suitable for?</p>
+        <div className='flex justify-between items-center mx-auto max-w-6xl flex-wrap w-full'>
+          <div className='shadow-2px p-6 h-[260px] rounded-lg max-w-[299px]'>
+            <div className="relative w-fit mx-auto after:-z-10 after:absolute after:content-[''] after:block after:w-[50px] after:h-[50px] after:bg-tint-5 after:-top-2 after:left-1.5 after:rounded-[18px_5px_10px_5px]">
+              <Image
+                src="/svg/icons/card-icon-01.svg"
+                alt="Group icon"
+                width={48}
+                height={48}
+                className="h-6 w-auto mt-5 mb-[30px] -translate-x-1.5"
+                priority
+              />
+            </div>
+            <h3 className=" leading-headline-3 text-headline-4 md:text-headline-3 font-semibold text-d-grey text-center mb-2">Membership Organisations</h3>
+            <p className='text-n-grey body-3 text-center'>Our membership management software provides full automation of membership renewals and payments</p>
+          </div>
+          <div className='shadow-2px min-h-[280px] p-6 rounded-lg max-w-[299px]'>
+            <div className="relative w-fit mx-auto after:-z-10 after:absolute after:content-[''] after:block after:w-[50px] after:h-[50px] after:bg-tint-5 after:-top-2 after:left-1.5 after:rounded-[18px_5px_10px_5px]">
+              <Image
+                src="/svg/icons/card-icon-02.svg"
+                alt="Group icon"
+                width={48}
+                height={48}
+                className="h-8 w-auto mt-5 mb-[30px] -translate-x-1.5"
+                priority
+              />
+            </div>
+            <h3 className=" leading-headline-3 text-headline-4 md:text-headline-3 font-semibold text-d-grey text-center mb-2">National Associations</h3>
+            <p className='text-n-grey body-3 text-center'>Our membership management software provides full automation of membership renewals and payments</p>
+          </div>
+          <div className='shadow-2px p-6 h-[260px] rounded-lg max-w-[299px]'>
+            <div className="relative w-fit mx-auto after:-z-10 after:absolute after:content-[''] after:block after:w-[50px] after:h-[50px] after:bg-tint-5 after:-top-2 after:left-1.5 after:rounded-[18px_5px_10px_5px]">
+              <Image
+                src="/svg/icons/card-icon-03.svg"
+                alt="Group icon"
+                width={48}
+                height={48}
+                className="h-8 w-auto mt-5 mb-[30px] -translate-x-1.5"
+                priority
+              />
+            </div>
+            <h3 className=" leading-headline-3 text-headline-4 md:text-headline-3 font-semibold max-w-44 mx-auto text-d-grey text-center mb-2">Clubs And Groups</h3>
+            <p className='text-n-grey body-3 text-center'>Our membership management software provides full automation of membership renewals and payments</p>
+          </div>
         </div>
       </section>
     </>
