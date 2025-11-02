@@ -157,6 +157,27 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section>
+        <div className="max-w-container mx-auto px-10 lg:px-14 py-24 flex items-center gap-4 lg:gap-12">
+          <div className='hidden md:block'>
+            <Image
+              src="/images/illustration-03.png"
+              alt="Nexcent"
+              width={391}
+              height={407}
+              className="min-w-[441px] -mx-10 lg:mx-0"
+              priority
+            />
+          </div>
+          <div className='max-w-[600px]'>
+            <h2 className="text-headline-3 md:text-headline-2 leading-headline-3 md:leading-headline-2 font-semibold line text-d-grey">How to design your site footer like we did</h2>
+            <p className='mt-3 body-3 text-n-grey sm:mt-4'>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+            <Button className='mt-8'>
+              Learn More
+            </Button>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
