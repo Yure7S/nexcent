@@ -84,7 +84,7 @@ export function Header() {
   }, [isMobileMenuOpen, isDesktop]);
 
   return (
-    <header className='text-black dark:text-black dark:bg-silver'>
+    <header className='text-black dark:text-black bg-silver'>
       <div className="max-w-container mx-auto p-[22px] flex justify-between items-center">
 
         <Link href="/">
@@ -191,10 +191,9 @@ export function Header() {
         />
       )}
 
-      {/* Menu Mobile Content */}
       {!isDesktop && (
-        <div className={`fixed top-0 right-0 h-full w-80 bg-white dark:bg-silver z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-          <div className="p-6 h-full flex flex-col">
+        <div className={`fixed top-0 left-0 h-full w-full bg-silver dark:bg-silver backdrop-blur-lg shadow-xl z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+          <div className="p-6 h-full flex flex-col max-w-md mx-auto">
             <div className="flex justify-between items-center mb-8">
               <Link href="/" onClick={closeMobileMenu}>
                 <Image
@@ -207,7 +206,7 @@ export function Header() {
               </Link>
               <button
                 onClick={closeMobileMenu}
-                className="group p-2 rounded-lg hover:bg-silver dark:hover:bg-primary hover:cursor-pointer transition-colors"
+                className="group p-2 rounded-lg hover:bg-primary dark:hover:bg-primary hover:cursor-pointer transition-colors"
                 aria-label="Fechar menu"
               >
                 <svg className="w-6 h-6 text-d-grey dark:text-l-grey group-hover:text-white dark:group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -223,7 +222,7 @@ export function Header() {
                     <Link
                       href={item.href}
                       onClick={closeMobileMenu}
-                      className="block py-3 px-4 text-d-grey dark:text-l-grey hover:text-primary dark:hover:text-primary hover:bg-silver dark:hover:bg-grey-blue rounded-lg transition-all duration-200"
+                      className="block py-4 px-4 text-d-grey dark:text-l-grey hover:text-primary dark:hover:text-primary rounded-lg transition-all duration-200 text-lg font-medium"
                     >
                       {item.label}
                     </Link>
@@ -232,11 +231,11 @@ export function Header() {
               </ul>
             </nav>
 
-            <div className="border-t border-grey-blue dark:border-l-grey pt-6 space-y-4">
+            <div className="border-t border-grey-blue/30 dark:border-l-grey/30 pt-6 space-y-4">
               <Link
                 href="/"
                 onClick={closeMobileMenu}
-                className="block text-center text-primary py-3 px-4 border border-primary rounded-lg hover:bg-primary hover:text-white transition-all duration-200"
+                className="block text-center text-primary py-3 px-4 border border-primary rounded-lg hover:bg-primary hover:text-white transition-all duration-200 font-medium"
               >
                 Login
               </Link>
