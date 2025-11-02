@@ -1,7 +1,7 @@
 // components/StatsCard.tsx
 "use client";
 
-import { useCountAnimation } from '@/hooks/use-count-animation';
+import { useCountAnimation } from '@/hooks/useCountAnimation';
 import Image from 'next/image';
 
 interface StatsCardProps {

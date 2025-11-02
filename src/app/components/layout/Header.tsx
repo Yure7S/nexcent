@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '../ui/primary-buttom';
+import { Button } from '../ui/PrimaryButton';
 import { ButtonSize } from '@/enums/buttom.enum';
 
 const DESKTOP_BREAKPOINT = 1080;
