@@ -224,7 +224,7 @@ export default function Home() {
         <h2 className='text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Caring is the new marketing</h2>
         <p className='text-n-grey max-w-[628px] mx-auto body-2 text-center mb-10'>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
         <div className='flex gap-6 gap-y-11 justify-center items-center mx-auto max-w-6xl flex-wrap w-full'>
-          <div className='relative hover:-translate-y-2 transition duration-300 ease-in-out mb-16'>
+          <div className='relative'>
             <Image
               src="/images/image-01.png"
               alt="Nexcent"
@@ -245,7 +245,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className='relative hover:-translate-y-2 transition duration-300 ease-in-out mb-16'>
+          <div className='relative'>
             <Image
               src="/images/image-02.png"
               alt="Nexcent"
@@ -266,7 +266,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className='relative hover:-translate-y-2 transition duration-300 ease-in-out mb-16'>
+          <div className='relative'>
             <Image
               src="/images/image-03.png"
               alt="Nexcent"
