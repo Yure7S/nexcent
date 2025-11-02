@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Button } from './components/ui/primary-buttom';
 import Link from 'next/link';
 import { ButtonSize } from '@/enums/buttom.enum';
+import { StatsCard } from './components/ui/stats-card';
 
 export default function Home() {
   return (
@@ -158,6 +159,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className='bg-silver py-16'>
+        <div className='flex w-full px-10 lg:px-20 max-w-container mx-auto justify-between items-center'>
+          <div>
+            <h2 className="text-headline-3 max-w-[408px] md:text-headline-2 leading-headline-3 md:leading-headline-2 font-semibold line text-d-grey">Helping a local <span className='text-primary'>business reinvent itself</span></h2>
+            <p className='mt-2 body-3 text-n-grey'>We reached here with our hard work and dedication</p>
+          </div>
+          <div className='flex flex-wrap gap-[30px] max-w-[540px]'>
+            <StatsCard iconAlt='Icone de pessoas' iconSrc='/svg/icons/stats-icon-01.svg' value='2,245,341' label='Members'></StatsCard>
+            <StatsCard iconAlt='Clubes' iconSrc='/svg/icons/card-icon-03.svg' value='46,328' label='Clubs'></StatsCard>
+            <StatsCard iconAlt='Icone de pessoas' iconSrc='/svg/icons/stats-icon-02.svg' value='828,867' label='Event Bookings'></StatsCard>
+            <StatsCard iconAlt='Icone de pessoas' iconSrc='/svg/icons/stats-icon-03.svg' value='1,926,436' label='Payments'></StatsCard>
+          </div>
+        </div>
+      </section>
       <section>
         <div className="max-w-container mx-auto px-10 lg:px-14 py-24 flex items-center gap-4 lg:gap-12">
           <div className='hidden md:block'>
@@ -180,7 +195,7 @@ export default function Home() {
         </div>
       </section>
       <section className='bg-silver'>
-        <div className="max-w-container mx-auto px-10 lg:px-14 py-8 flex-col md:flex-row flex items-center gap-4 lg:gap-12">
+        <div className="max-w-container mx-auto py-8 flex-col md:flex-row flex items-center gap-4 lg:gap-12">
           <div>
             <Image
               src="/images/image-04.png"
@@ -196,61 +211,61 @@ export default function Home() {
             <h4 className='text-primary mb-2 text-headline-4 font-semibold'>Tim Smith</h4>
             <p className='body-2 text-n-grey'>British Dragon Boat Racing Association</p>
             <ul className='flex gap-10 items-center justify-items-center w-fit mt-8'>
-            <li><Link href="/">
-              <Image
-                src="/images/clients/client-01.png"
-                alt="Client"
-                width={48}
-                height={48}
-                priority
-              />
-            </Link></li>
-            <li><Link href="/">
-              <Image
-                src="/images/clients/client-02.png"
-                alt="Client"
-                width={48}
-                height={48}
-                priority
-              />
-            </Link></li>
-            <li><Link href="/">
-              <Image
-                src="/images/clients/client-03.png"
-                alt="Client"
-                width={48}
-                height={48}
-                priority
-              />
-            </Link></li>
-            <li><Link href="/">
-              <Image
-                src="/images/clients/client-04.png"
-                alt="Client"
-                width={48}
-                height={48}
-                priority
-              />
-            </Link></li>
-            <li><Link href="/">
-              <Image
-                src="/images/clients/client-05.png"
-                alt="Client"
-                width={48}
-                height={48}
-                priority
-              />
-            </Link></li>
-            <li><Link href="/">
-              <Image
-                src="/images/clients/client-06.png"
-                alt="Client"
-                width={48}
-                height={48}
-                priority
-              />
-            </Link></li>
-          </ul>
+              <li><Link href="/">
+                <Image
+                  src="/images/clients/client-01.png"
+                  alt="Client"
+                  width={48}
+                  height={48}
+                  priority
+                />
+              </Link></li>
+              <li><Link href="/">
+                <Image
+                  src="/images/clients/client-02.png"
+                  alt="Client"
+                  width={48}
+                  height={48}
+                  priority
+                />
+              </Link></li>
+              <li><Link href="/">
+                <Image
+                  src="/images/clients/client-03.png"
+                  alt="Client"
+                  width={48}
+                  height={48}
+                  priority
+                />
+              </Link></li>
+              <li><Link href="/">
+                <Image
+                  src="/images/clients/client-04.png"
+                  alt="Client"
+                  width={48}
+                  height={48}
+                  priority
+                />
+              </Link></li>
+              <li><Link href="/">
+                <Image
+                  src="/images/clients/client-05.png"
+                  alt="Client"
+                  width={48}
+                  height={48}
+                  priority
+                />
+              </Link></li>
+              <li><Link href="/">
+                <Image
+                  src="/images/clients/client-06.png"
+                  alt="Client"
+                  width={48}
+                  height={48}
+                  priority
+                />
+              </Link></li>
+            </ul>
           </div>
         </div>
       </section>
