@@ -136,6 +136,27 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section >
+        <div className="max-w-container mx-auto px-10 sm:px-14 py-24 flex items-center gap-12">
+          <div className='hidden lg:block'>
+            <Image
+              src="/images/illustration-02.png"
+              alt="Nexcent"
+              width={391}
+              height={407}
+              className="min-w-[441px]"
+              priority
+            />
+          </div>
+          <div className='max-w-[600px]'>
+            <h2 className="text-headline-3 md:text-headline-2 leading-headline-3 md:leading-headline-2 font-semibold line text-d-grey">The unseen of spending three years at Pixelgrade</h2>
+            <p className='mt-3 body-3 text-n-grey sm:mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+            <Button className='mt-8'>
+              Learn More
+            </Button>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
