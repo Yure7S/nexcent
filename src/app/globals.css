@@ -113,6 +113,8 @@
   transition: none !important;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* Dark Mode */
 :root.dark {
   /* Cores */

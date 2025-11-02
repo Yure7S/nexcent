@@ -3,23 +3,23 @@
 import Image from 'next/image';
 
 const clients = [
-    { src: "/images/client-01.png", alt: "Client 1" },
-    { src: "/images/client-02.png", alt: "Client 2" },
-    { src: "/images/client-03.png", alt: "Client 3" },
-    { src: "/images/client-04.png", alt: "Client 4" },
-    { src: "/images/client-05.png", alt: "Client 5" },
-    { src: "/images/client-06.png", alt: "Client 6" },
+    { src: "/images/client-01.png", alt: "Client 1", darkClass: "dark:brightness-0 dark:invert dark:opacity-80" },
+    { src: "/images/client-02.png", alt: "Client 2", darkClass: "dark:brightness-0 dark:invert dark:opacity-80" },
+    { src: "/images/client-03.png", alt: "Client 3", darkClass: "" },
+    { src: "/images/client-04.png", alt: "Client 4", darkClass: "dark:brightness-0 dark:invert dark:opacity-80" },
+    { src: "/images/client-05.png", alt: "Client 5", darkClass: "dark:brightness-0 dark:invert dark:opacity-80" },
+    { src: "/images/client-06.png", alt: "Client 6", darkClass: "dark:brightness-0 dark:invert dark:opacity-80" },
 ];
 
 export function ClientsSection() {
     const infiniteClients = [...clients, ...clients, ...clients];
 
     return (
-        <section className='py-10 px-3.5'>
-            <h2 className='text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>
+        <section className="py-10 px-3.5">
+            <h2 className="text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2">
                 Our Clients
             </h2>
-            <p className='text-n-grey body-2 text-center mb-10'>
+            <p className="text-n-grey body-2 text-center mb-10">
                 We have been working with some Fortune 500+ clients
             </p>
 
@@ -33,7 +33,11 @@ export function ClientsSection() {
                                     alt={client.alt}
                                     width={48}
                                     height={48}
-                                    className="hover:opacity-100 transition-opacity duration-300"
+                                    className={`
+                                        transition-all duration-300
+                                        hover:opacity-100
+                                        ${client.darkClass}
+                                    `}
                                 />
                             </div>
                         ))}

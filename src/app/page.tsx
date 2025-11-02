@@ -189,8 +189,10 @@ export default function Home() {
           </div>
           <div className='max-w-[748px]'>
             <p className='mt-3 body-2 text-n-grey font-medium sm:mt-4 mb-4'>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+
             <h4 className='text-primary mb-2 text-headline-4 font-semibold'>Tim Smith</h4>
             <p className='body-2 text-n-grey'>British Dragon Boat Racing Association</p>
+
             <div className='flex lg:items-center flex-col lg:flex-row xl:gap-3 mt-8'>
               <ul className='flex flex-wrap sm:flex-nowrap gap-5 xl:gap-10 items-center justify-items-center w-fit'>
                 {[
@@ -200,26 +202,34 @@ export default function Home() {
                   "/images/clients/client-04.png",
                   "/images/clients/client-05.png",
                   "/images/clients/client-06.png"
-                ].map((src, index) => (
-                  <li key={index} className="flex justify-center">
-                    <Link href="/" className="block hover:opacity-80 transition-opacity">
-                      <Image
-                        src={src}
-                        alt={`Client ${index + 1}`}
-                        width={48}
-                        height={48}
-                        className=""
-                        priority={false}
-                        loading="lazy"
-                      />
-                    </Link>
-                  </li>
-                ))}
+                ].map((src, index) => {
+                  const isThirdImage = src === "/images/clients/client-03.png";
+
+                  return (
+                    <li key={index} className="flex justify-center">
+                      <Link href="/" className="block hover:opacity-80 transition-opacity">
+                        <Image
+                          src={src}
+                          alt={`Client ${index + 1}`}
+                          width={48}
+                          height={48}
+                          className={`
+                  ${!isThirdImage ? 'dark:brightness-0 dark:invert dark:opacity-80' : ''}
+                `}
+                          priority={false}
+                          loading="lazy"
+                        />
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
-              <Link className='flex items-center w-fit text-primary px-4 py-2.5 text-headline-4 font-semibold text-center justify-center gap-3' href="/">Meet all customers
+
+              <Link className='flex items-center w-fit text-primary px-4 py-2.5 text-headline-4 font-semibold text-center justify-center gap-3' href="/">
+                Meet all customers
                 <Image
                   src="/svg/icons/arrow-icon.svg"
-                  alt="Ilustration"
+                  alt="Arrow icon"
                   width={14}
                   height={14}
                 />
