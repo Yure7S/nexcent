@@ -3,8 +3,8 @@
 @theme {
   /* Cores - Light Mode (Default) */
   --color-black: #14102F;
-  --color-d-brey: #4D4D4D;
-  --color-grey: #616161;
+  --color-d-grey: #4D4D4D;
+  --color-n-grey: #616161;
   --color-l-grey: #88939E;
   --color-grey-blue: #ABBED1;
   --color-silver: #F5F7FA;
@@ -36,7 +36,7 @@
   --color-shade-4: #FF0F68;
   --color-shade-5: #14102F;
 
-  /* Tipografia */
+  /* Tipografia - Headlines */
   --font-size-headline-1: 4rem;
   --line-height-headline-1: 4.75rem;
   --font-size-headline-2: 2.25rem;
@@ -46,6 +46,22 @@
   --font-size-headline-4: 1.25rem;
   --line-height-headline-4: 1.75rem;
 
+  /* Tipografia - Body Text */
+  --font-size-body-1: 1.125rem;    /* 18px */
+  --line-height-body-1: 1.75rem;   /* 28px */
+  
+  --font-size-body-2: 1rem;        /* 16px */
+  --line-height-body-2: 1.5rem;    /* 24px */
+  
+  --font-size-body-3: 0.875rem;    /* 14px */
+  --line-height-body-3: 1.25rem;   /* 20px */
+  
+  --font-size-body-4: 0.75rem;     /* 12px */
+  --line-height-body-4: 1rem;      /* 16px */
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
   --font-weight-semibold: 600;
 
   /* Shadows */
@@ -63,12 +79,12 @@
 :root.dark {
   /* Cores - Dark Mode */
   --color-black: #FFFFFF;
-  --color-white: #14102F;
-  --color-d-brey: #B0B0B0;
-  --color-grey: #9E9E9E;
+  --color-d-grey: #B0B0B0;
+  --color-n-grey: #9E9E9E;
   --color-l-grey: #757575;
   --color-grey-blue: #4A5C6A;
   --color-silver: #1E1E1E;
+  --color-white: #14102F;
 
   --color-primary: #FF74A8;
   --color-secondary: #CFD8DC;
@@ -122,6 +138,55 @@
   font-weight: var(--font-weight-semibold);
 }
 
+/* Classes utilitárias para Body Text */
+.body-1 {
+  font-size: var(--font-size-body-1);
+  line-height: var(--line-height-body-1);
+  font-weight: var(--font-weight-regular);
+}
+
+.body-1-medium {
+  font-size: var(--font-size-body-1);
+  line-height: var(--line-height-body-1);
+  font-weight: var(--font-weight-medium);
+}
+
+.body-2 {
+  font-size: var(--font-size-body-2);
+  line-height: var(--line-height-body-2);
+  font-weight: var(--font-weight-regular);
+}
+
+.body-2-medium {
+  font-size: var(--font-size-body-2);
+  line-height: var(--line-height-body-2);
+  font-weight: var(--font-weight-medium);
+}
+
+.body-3 {
+  font-size: var(--font-size-body-3);
+  line-height: var(--line-height-body-3);
+  font-weight: var(--font-weight-regular);
+}
+
+.body-3-medium {
+  font-size: var(--font-size-body-3);
+  line-height: var(--line-height-body-3);
+  font-weight: var(--font-weight-medium);
+}
+
+.body-4 {
+  font-size: var(--font-size-body-4);
+  line-height: var(--line-height-body-4);
+  font-weight: var(--font-weight-regular);
+}
+
+.body-4-medium {
+  font-size: var(--font-size-body-4);
+  line-height: var(--line-height-body-4);
+  font-weight: var(--font-weight-medium);
+}
+
 /* Classes utilitárias para shadows */
 .shadow-2px {
   box-shadow: var(--shadow-2px);
@@ -145,4 +210,13 @@
 
 * {
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Estilos base do body */
+body {
+  @apply bg-white text-black;
+}
+
+.dark body {
+  @apply bg-white text-black;
 }
