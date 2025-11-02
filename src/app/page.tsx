@@ -99,18 +99,55 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='bg-silver py-16 px-3.5'>
-        <div className='flex gap-y-7 w-full flex-wrap px-8 lg:px-20 max-w-container mx-auto justify-between items-center'>
-          <div className='basis-72 grow'>
-            <h2 className="text-headline-3 max-w-[408px] md:text-headline-2 leading-headline-3 md:leading-headline-2 font-semibold line text-d-grey">Helping a local <span className='text-primary'>business reinvent itself</span></h2>
-            <p className='mt-2 body-3 text-n-grey'>We reached here with our hard work and dedication</p>
+      <section className="bg-silver py-16 px-3.5">
+        <div className="flex flex-col  lg:flex-row gap-8 px-8 lg:gap-16 w-full max-w-7xl mx-auto md:items-center justify-between">
+          <div className="flex-1 max-w-lg">
+            <h2 className="text-headline-3 md:text-headline-2 leading-tight font-semibold text-d-grey">
+              Helping a local{' '}
+              <span className="text-primary">business reinvent itself</span>
+            </h2>
+            <p className="mt-4 body-3 text-n-grey">
+              We reached here with our hard work and dedication
+            </p>
           </div>
-          <div className='flex flex-wrap gap-[30px] max-w-[540px]'>
-            <StatsCard iconAlt='Icone de pessoas' iconSrc='/svg/icons/stats-icon-01.svg' value='2,245,341' label='Members'></StatsCard>
-            <StatsCard iconAlt='Clubes' iconSrc='/svg/icons/card-icon-03.svg' value='46,328' label='Clubs'></StatsCard>
-            <StatsCard iconAlt='Icone de pessoas' iconSrc='/svg/icons/stats-icon-02.svg' value='828,867' label='Event Bookings'></StatsCard>
-            <StatsCard iconAlt='Icone de pessoas' iconSrc='/svg/icons/stats-icon-03.svg' value='1,926,436' label='Payments'></StatsCard>
+
+          {/* Stats Cards Grid */}
+          <div className="flex-1 max-w-2xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
+              <StatsCard
+                iconAlt="Ícone de membros"
+                iconSrc="/svg/icons/stats-icon-01.svg"
+                value="2,245,341"
+                label="Members"
+                duration={2500}
+              />
+
+              <StatsCard
+                iconAlt="Ícone de clubes"
+                iconSrc="/svg/icons/card-icon-03.svg"
+                value="46,328"
+                label="Clubs"
+                duration={1800}
+              />
+
+              <StatsCard
+                iconAlt="Ícone de reservas"
+                iconSrc="/svg/icons/stats-icon-02.svg"
+                value="828,867"
+                label="Event Bookings"
+                duration={2200}
+              />
+
+              <StatsCard
+                iconAlt="Ícone de pagamentos"
+                iconSrc="/svg/icons/stats-icon-03.svg"
+                value="1,926,436"
+                label="Payments"
+                duration={2800}
+              />
+            </div>
           </div>
+
         </div>
       </section>
       <section className='px-3.5'>
@@ -220,7 +257,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='pt-12 pb-24 px-3.5'>
+      <section className='pt-12 pb-40 px-3.5'>
         <h2 className='text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Caring is the new marketing</h2>
         <p className='text-n-grey max-w-[628px] mx-auto body-2 text-center mb-10'>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
         <div className='flex gap-6 gap-y-11 justify-center items-center mx-auto max-w-6xl flex-wrap w-full'>
