@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Button } from './components/ui/primary-buttom';
 import Link from 'next/link';
+import { ButtonSize } from '@/enums/buttom.enum';
 
 export default function Home() {
   return (
@@ -175,6 +176,54 @@ export default function Home() {
             <Button className='mt-8'>
               Learn More
             </Button>
+          </div>
+        </div>
+      </section>
+      <section className='pt-12 pb-24'>
+        <h2 className='text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Caring is the new marketing</h2>
+        <p className='text-n-grey max-w-[628px] mx-auto body-2 text-center mb-10'>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
+        <div className=' flex mb-20 justify-between items-center mx-auto max-w-6xl flex-wrap w-full'>
+          <div className='relative'>
+            <Image
+              src="/images/image-01.png"
+              alt="Nexcent"
+              width={391}
+              height={407}
+              className="max-w-[368px] z-10"
+              priority
+            />
+            <div className='absolute radius-4 shadow-16px -translate-x-1/2 -translate-y-14 left-1/2 p-4 max-w-[317px] rounded-lg w-full mx-auto -mt-9 z-30 bg-silver'>
+              <h4 className='text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-4'>Creating Streamlined Safeguarding Processes with OneRen</h4>
+              <Button size={ButtonSize.MD}>Readmore</Button>
+            </div>
+          </div>
+          <div className='relative'>
+            <Image
+              src="/images/image-02.png"
+              alt="Nexcent"
+              width={391}
+              height={407}
+              className="max-w-[368px] z-10"
+              priority
+            />
+            <div className='absolute radius-4 shadow-16px -translate-x-1/2 -translate-y-14 left-1/2 p-4 max-w-[317px] rounded-lg w-full mx-auto -mt-9 z-30 bg-silver'>
+              <h4 className='text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-4'>What are your safeguarding responsibilities and how can you manage them?</h4>
+              <Button size={ButtonSize.MD}>Readmore</Button>
+            </div>
+          </div>
+          <div className='relative'>
+            <Image
+              src="/images/image-03.png"
+              alt="Nexcent"
+              width={391}
+              height={407}
+              className="max-w-[368px] z-10"
+              priority
+            />
+            <div className='absolute radius-4 shadow-16px -translate-x-1/2 -translate-y-14 left-1/2 p-4 max-w-[317px] rounded-lg w-full mx-auto -mt-9 z-30 bg-silver'>
+              <h4 className='text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-4'>Revamping the Membership Model with Triathlon Australia</h4>
+              <Button size={ButtonSize.MD}>Readmore</Button>
+            </div>
           </div>
         </div>
       </section>
