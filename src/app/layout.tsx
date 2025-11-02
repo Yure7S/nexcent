@@ -3,11 +3,13 @@ import './globals.css';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/footer';
 
+
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
-  weight: ['400', '500', '600', '700']
+  weight: ['400', '500', '600', '700'],
+  preload: true,
 });
 
 export default function RootLayout({
