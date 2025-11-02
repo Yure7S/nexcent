@@ -160,8 +160,8 @@ export default function Home() {
         </div>
       </section>
       <section className='bg-silver py-16'>
-        <div className='flex w-full px-10 lg:px-20 max-w-container mx-auto justify-between items-center'>
-          <div>
+        <div className='flex gap-y-7 w-full flex-wrap px-10 lg:px-20 max-w-container mx-auto justify-between items-center'>
+          <div className='basis-72 grow'>
             <h2 className="text-headline-3 max-w-[408px] md:text-headline-2 leading-headline-3 md:leading-headline-2 font-semibold line text-d-grey">Helping a local <span className='text-primary'>business reinvent itself</span></h2>
             <p className='mt-2 body-3 text-n-grey'>We reached here with our hard work and dedication</p>
           </div>
