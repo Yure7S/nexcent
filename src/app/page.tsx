@@ -172,7 +172,7 @@ export default function Home() {
         </div>
       </section>
       <section className='bg-silver px-3.5'>
-        <div className="max-w-container mx-auto py-8 flex-col md:flex-row flex items-center gap-4 lg:gap-12">
+        <div className="max-w-container mx-auto py-8 flex-col md:flex-row flex items-start lg:items-center gap-4 lg:gap-12">
           <div>
             <Image
               src="/images/image-04.png"
@@ -187,80 +187,46 @@ export default function Home() {
             <p className='mt-3 body-2 text-n-grey font-medium sm:mt-4 mb-4'>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
             <h4 className='text-primary mb-2 text-headline-4 font-semibold'>Tim Smith</h4>
             <p className='body-2 text-n-grey'>British Dragon Boat Racing Association</p>
-            <ul className='flex gap-10 items-center justify-items-center w-fit mt-8'>
-              <li><Link href="/">
+            <div className='flex lg:items-center flex-col lg:flex-row xl:gap-3 mt-8'>
+              <ul className='flex flex-wrap sm:flex-nowrap gap-5 xl:gap-10 items-center justify-items-center w-fit'>
+                {[
+                  "/images/clients/client-01.png",
+                  "/images/clients/client-02.png",
+                  "/images/clients/client-03.png",
+                  "/images/clients/client-04.png",
+                  "/images/clients/client-05.png",
+                  "/images/clients/client-06.png"
+                ].map((src, index) => (
+                  <li key={index} className="flex justify-center">
+                    <Link href="/" className="block hover:opacity-80 transition-opacity">
+                      <Image
+                        src={src}
+                        alt={`Client ${index + 1}`}
+                        width={48}
+                        height={48}
+                        className=""
+                        priority
+                      />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <Link className='flex items-center w-fit text-primary px-4 py-2.5 text-headline-4 font-semibold text-center justify-center gap-3' href="/">Meet all customers
                 <Image
-                  src="/images/clients/client-01.png"
-                  alt="Client"
-                  width={48}
-                  height={48}
-                  priority
+                  src="/svg/icons/arrow-icon.svg"
+                  alt="Ilustration"
+                  width={14}
+                  height={14}
                 />
-              </Link></li>
-              <li><Link href="/">
-                <Image
-                  src="/images/clients/client-02.png"
-                  alt="Client"
-                  width={48}
-                  height={48}
-                  priority
-                />
-              </Link></li>
-              <li><Link href="/">
-                <Image
-                  src="/images/clients/client-03.png"
-                  alt="Client"
-                  width={48}
-                  height={48}
-                  priority
-                />
-              </Link></li>
-              <li><Link href="/">
-                <Image
-                  src="/images/clients/client-04.png"
-                  alt="Client"
-                  width={48}
-                  height={48}
-                  priority
-                />
-              </Link></li>
-              <li><Link href="/">
-                <Image
-                  src="/images/clients/client-05.png"
-                  alt="Client"
-                  width={48}
-                  height={48}
-                  priority
-                />
-              </Link></li>
-              <li><Link href="/">
-                <Image
-                  src="/images/clients/client-06.png"
-                  alt="Client"
-                  width={48}
-                  height={48}
-                  priority
-                />
-              </Link></li>
-              <li>
-                <Link className='flex items-center text-primary px-4 py-2.5 text-headline-4 font-semibold text-center mx-auto w-full justify-center gap-3' href="/">Meet all customers
-                  <Image
-                    src="/svg/icons/arrow-icon.svg"
-                    alt="Ilustration"
-                    width={14}
-                    height={14}
-                  />
-                </Link>
-              </li>
-            </ul>
-
+              </Link>
+            </div>
           </div>
         </div>
-      </section>
+      </section >
       <section className='pt-12 pb-40 px-3.5'>
         <h2 className='text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Caring is the new marketing</h2>
         <p className='text-n-grey max-w-[628px] mx-auto body-2 text-center mb-10'>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
-        <div className='flex gap-6 gap-y-11 justify-center items-center mx-auto max-w-6xl flex-wrap w-full'>
+        <div className='flex gap-6 gap-y-32 xl:gap-y-11 justify-center items-center mx-auto max-w-6xl flex-wrap w-full'>
           <div className='relative'>
             <Image
               src="/images/image-01.png"
@@ -271,7 +237,7 @@ export default function Home() {
               priority
             />
             <div className='absolute radius-4 shadow-16px -translate-x-1/2 -translate-y-14 left-1/2 p-4 max-w-[317px] rounded-lg w-full mx-auto -mt-9 z-30 bg-silver'>
-              <h4 className='text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-4'>Creating Streamlined Safeguarding Processes with OneRen</h4>
+              <h4 className='text-md sm:text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-2 sm:mb-4'>Creating Streamlined Safeguarding Processes with OneRen</h4>
               <Link className='flex items-center text-primary px-4 py-2.5 text-headline-4 font-semibold text-center mx-auto w-full justify-center gap-3' href="/">Readmore
                 <Image
                   src="/svg/icons/arrow-icon.svg"
@@ -292,7 +258,7 @@ export default function Home() {
               priority
             />
             <div className='absolute radius-4 shadow-16px -translate-x-1/2 -translate-y-14 left-1/2 p-4 max-w-[317px] rounded-lg w-full mx-auto -mt-9 z-30 bg-silver'>
-              <h4 className='text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-4'>What are your safeguarding responsibilities and how can you manage them?</h4>
+              <h4 className='text-md sm:text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-2 sm:mb-4'>What are your safeguarding responsibilities and how can you manage them?</h4>
               <Link className='flex items-center text-primary px-4 py-2.5 text-headline-4 font-semibold text-center mx-auto w-full justify-center gap-3' href="/">Readmore
                 <Image
                   src="/svg/icons/arrow-icon.svg"
@@ -313,7 +279,7 @@ export default function Home() {
               priority
             />
             <div className='absolute radius-4 shadow-16px -translate-x-1/2 -translate-y-14 left-1/2 p-4 max-w-[317px] rounded-lg w-full mx-auto -mt-9 z-30 bg-silver'>
-              <h4 className='text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-4'>Revamping the Membership Model with Triathlon Australia</h4>
+              <h4 className='text-md sm:text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-2 sm:mb-4'>Revamping the Membership Model with Triathlon Australia</h4>
               <Link className='flex items-center text-primary px-4 py-2.5 text-headline-4 font-semibold text-center mx-auto w-full justify-center gap-3' href="/">Readmore
                 <Image
                   src="/svg/icons/arrow-icon.svg"
