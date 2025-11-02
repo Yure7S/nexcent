@@ -72,9 +72,50 @@
   --spacing-container: 1320px;
 }
 
+/* Tema light forçado (para o footer) */
+[data-theme="light"] {
+  --color-black: #14102F;
+  --color-d-grey: #4D4D4D;
+  --color-n-grey: #616161;
+  --color-l-grey: #88939E;
+  --color-grey-blue: #ABBED1;
+  --color-silver: #F5F7FA;
+  --color-white: #FFFFFF;
+
+  --color-primary: #F95894;
+  --color-secondary: #263238;
+
+  --color-info: #2194F3;
+  --color-warning: #FBC02D;
+  --color-error: #E53835;
+  --color-success: #2E7D31;
+
+  --color-tint-1: #66BB69;
+  --color-tint-2: #81C784;
+  --color-tint-3: #A5D6A7;
+  --color-tint-4: #C8E6C9;
+  --color-tint-5: #E8F5E9;
+
+  --color-shade-1: #FF94BC;
+  --color-shade-2: #FF74A8;
+  --color-shade-3: #FF3580;
+  --color-shade-4: #FF0F68;
+  --color-shade-5: #14102F;
+
+  --shadow-2px: 0 2px 4px rgb(171 190 209 / 0.6);
+  --shadow-4px: 0 4px 8px rgb(171 190 209 / 0.4);
+  --shadow-6px: 0 6px 12px rgb(171 190 209 / 0.3);
+  --shadow-8px: 0 8px 16px rgb(171 190 209 / 0.4);
+  --shadow-16px: 0 16px 32px rgb(171 190 209 / 0.3);
+}
+
+[data-theme="light"] * {
+  transition: none !important;
+}
+
 /* Dark Mode */
 :root.dark {
-  /* Cores - Dark Mode */
+  /* Cores */
   --color-black: #FFFFFF;
   --color-d-grey: #B0B0B0;
   --color-n-grey: #9E9E9E;
