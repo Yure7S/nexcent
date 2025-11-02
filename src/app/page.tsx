@@ -29,7 +29,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <ClientsSection/>
+      <ClientsSection />
       <section className='px-3.5'>
         <h2 className='max-w-[550px] mx-auto leading-headline-2 text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Manage your entire community in a single system</h2>
         <p className='text-n-grey body-2 text-center mb-4'>Who is Nextcent suitable for?</p>
@@ -205,7 +205,18 @@ export default function Home() {
                   priority
                 />
               </Link></li>
+              <li>
+                <Link className='flex items-center text-primary px-4 py-2.5 text-headline-4 font-semibold text-center mx-auto w-full justify-center gap-3' href="/">Meet all customers
+                  <Image
+                    src="/svg/icons/arrow-icon.svg"
+                    alt="Ilustration"
+                    width={14}
+                    height={14}
+                  />
+                </Link>
+              </li>
             </ul>
+
           </div>
         </div>
       </section>
@@ -213,7 +224,7 @@ export default function Home() {
         <h2 className='text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Caring is the new marketing</h2>
         <p className='text-n-grey max-w-[628px] mx-auto body-2 text-center mb-10'>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
         <div className='flex gap-6 gap-y-11 justify-center items-center mx-auto max-w-6xl flex-wrap w-full'>
-          <div className='relative mb-16'>
+          <div className='relative hover:-translate-y-2 transition duration-300 ease-in-out mb-16'>
             <Image
               src="/images/image-01.png"
               alt="Nexcent"
@@ -224,10 +235,17 @@ export default function Home() {
             />
             <div className='absolute radius-4 shadow-16px -translate-x-1/2 -translate-y-14 left-1/2 p-4 max-w-[317px] rounded-lg w-full mx-auto -mt-9 z-30 bg-silver'>
               <h4 className='text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-4'>Creating Streamlined Safeguarding Processes with OneRen</h4>
-              <Button size={ButtonSize.MD}>Readmore</Button>
+              <Link className='flex items-center text-primary px-4 py-2.5 text-headline-4 font-semibold text-center mx-auto w-full justify-center gap-3' href="/">Readmore
+                <Image
+                  src="/svg/icons/arrow-icon.svg"
+                  alt="Ilustration"
+                  width={14}
+                  height={14}
+                />
+              </Link>
             </div>
           </div>
-          <div className='relative mb-16'>
+          <div className='relative hover:-translate-y-2 transition duration-300 ease-in-out mb-16'>
             <Image
               src="/images/image-02.png"
               alt="Nexcent"
@@ -238,10 +256,17 @@ export default function Home() {
             />
             <div className='absolute radius-4 shadow-16px -translate-x-1/2 -translate-y-14 left-1/2 p-4 max-w-[317px] rounded-lg w-full mx-auto -mt-9 z-30 bg-silver'>
               <h4 className='text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-4'>What are your safeguarding responsibilities and how can you manage them?</h4>
-              <Button size={ButtonSize.MD}>Readmore</Button>
+              <Link className='flex items-center text-primary px-4 py-2.5 text-headline-4 font-semibold text-center mx-auto w-full justify-center gap-3' href="/">Readmore
+                <Image
+                  src="/svg/icons/arrow-icon.svg"
+                  alt="Ilustration"
+                  width={14}
+                  height={14}
+                />
+              </Link>
             </div>
           </div>
-          <div className='relative mb-16'>
+          <div className='relative hover:-translate-y-2 transition duration-300 ease-in-out mb-16'>
             <Image
               src="/images/image-03.png"
               alt="Nexcent"
@@ -252,7 +277,15 @@ export default function Home() {
             />
             <div className='absolute radius-4 shadow-16px -translate-x-1/2 -translate-y-14 left-1/2 p-4 max-w-[317px] rounded-lg w-full mx-auto -mt-9 z-30 bg-silver'>
               <h4 className='text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-4'>Revamping the Membership Model with Triathlon Australia</h4>
-              <Button size={ButtonSize.MD}>Readmore</Button>
+              <Link className='flex items-center text-primary px-4 py-2.5 text-headline-4 font-semibold text-center mx-auto w-full justify-center gap-3' href="/">Readmore
+                <Image
+                  src="/svg/icons/arrow-icon.svg"
+                  alt="Ilustration"
+                  width={14}
+                  height={14}
+                />
+              </Link>
+
             </div>
           </div>
         </div>
