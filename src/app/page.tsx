@@ -24,7 +24,8 @@ export default function Home() {
               width={391}
               height={407}
               className="h-[407px] min-w-[391px]"
-              priority
+              priority={true}
+
             />
           </div>
         </div>
@@ -87,7 +88,8 @@ export default function Home() {
               width={391}
               height={407}
               className="min-w-[441px] -mx-10 lg:mx-0"
-              priority
+              priority={false}
+              loading="lazy"
             />
           </div>
           <div className='max-w-[600px]'>
@@ -159,7 +161,8 @@ export default function Home() {
               width={391}
               height={407}
               className="min-w-[441px] -mx-10 lg:mx-0"
-              priority
+              priority={false}
+              loading="lazy"
             />
           </div>
           <div className='max-w-[600px]'>
@@ -180,7 +183,8 @@ export default function Home() {
               width={391}
               height={407}
               className="min-w-[326px]"
-              priority
+              priority={false}
+              loading="lazy"
             />
           </div>
           <div className='max-w-[748px]'>
@@ -205,7 +209,8 @@ export default function Home() {
                         width={48}
                         height={48}
                         className=""
-                        priority
+                        priority={false}
+                        loading="lazy"
                       />
                     </Link>
                   </li>
@@ -234,7 +239,8 @@ export default function Home() {
               width={391}
               height={407}
               className="w-full max-w-[368px] z-10"
-              priority
+              priority={false}
+              loading="lazy"
             />
             <div className='absolute radius-4 shadow-16px -translate-x-1/2 -translate-y-14 left-1/2 p-4 max-w-[317px] rounded-lg w-full mx-auto -mt-9 z-30 bg-silver'>
               <h4 className='text-md sm:text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-2 sm:mb-4'>Creating Streamlined Safeguarding Processes with OneRen</h4>
@@ -255,7 +261,8 @@ export default function Home() {
               width={391}
               height={407}
               className="w-full max-w-[368px] z-10"
-              priority
+              priority={false}
+              loading="lazy"
             />
             <div className='absolute radius-4 shadow-16px -translate-x-1/2 -translate-y-14 left-1/2 p-4 max-w-[317px] rounded-lg w-full mx-auto -mt-9 z-30 bg-silver'>
               <h4 className='text-md sm:text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-2 sm:mb-4'>What are your safeguarding responsibilities and how can you manage them?</h4>
@@ -276,7 +283,8 @@ export default function Home() {
               width={391}
               height={407}
               className="w-full max-w-[368px] z-10"
-              priority
+              priority={false}
+              loading="lazy"
             />
             <div className='absolute radius-4 shadow-16px -translate-x-1/2 -translate-y-14 left-1/2 p-4 max-w-[317px] rounded-lg w-full mx-auto -mt-9 z-30 bg-silver'>
               <h4 className='text-md sm:text-headline-4 text-center leading-headline-4 font-semibold text-n-grey mb-2 sm:mb-4'>Revamping the Membership Model with Triathlon Australia</h4>
@@ -295,7 +303,18 @@ export default function Home() {
       </section>
       <section className='py-8 w-full bg-silver'>
         <h2 className='max-w-[400px] md:max-w-[887px] mb-8 w-full text-center mx-auto text-headline-2 md:text-headline-1 leading-headline-2 md:leading-headline-1 font-semibold'>Pellentesque suscipit fringilla libero eu.</h2>
-        <Button className='mt-8 mx-auto block'>
+        <Button
+          icon={
+            <Image
+              src="/svg/icons/arrow-white-icon.svg"
+              alt=""
+              width={14}
+              height={14}
+            />
+          }
+          iconPosition="right"
+          className='mx-auto'
+        >
           Get a Demo
         </Button>
       </section>

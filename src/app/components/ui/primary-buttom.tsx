@@ -38,7 +38,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             ref={ref}
             className={cn(
                // Base styles
-               ' hover items-center justify-center rounded-lg transition-all duration-200',
+               ' hover flex items-center justify-center rounded-lg transition-all duration-200',
                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
                'bg-primary hover:bg-shade-3 hover:cursor-pointer active:bg-shade-2 text-white',
                'shadow-sm hover:shadow-md',
