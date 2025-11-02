@@ -33,60 +33,54 @@ export default function Home() {
         <p className='text-n-grey body-2 text-center mb-10'>We have been working with some Fortune 500+ clients</p>
         <div>
           <ul className='flex gap-[136px] items-center justify-items-center w-fit mx-auto mb-16'>
-            <li><Link href="/">
+            <li>
               <Image
-                src="/images/clients/client-01.png"
+                src="/images/client-01.png"
                 alt="Client"
                 width={48}
                 height={48}
-                priority
               />
-            </Link></li>
-            <li><Link href="/">
+            </li>
+            <li>
               <Image
-                src="/images/clients/client-02.png"
+                src="/images/client-02.png"
                 alt="Client"
                 width={48}
                 height={48}
-                priority
               />
-            </Link></li>
-            <li><Link href="/">
+            </li>
+            <li>
               <Image
-                src="/images/clients/client-03.png"
+                src="/images/client-03.png"
                 alt="Client"
                 width={48}
                 height={48}
-                priority
               />
-            </Link></li>
-            <li><Link href="/">
+            </li>
+            <li>
               <Image
-                src="/images/clients/client-04.png"
+                src="/images/client-04.png"
                 alt="Client"
                 width={48}
                 height={48}
-                priority
               />
-            </Link></li>
-            <li><Link href="/">
+            </li>
+            <li>
               <Image
-                src="/images/clients/client-05.png"
+                src="/images/client-05.png"
                 alt="Client"
                 width={48}
                 height={48}
-                priority
               />
-            </Link></li>
-            <li><Link href="/">
+            </li>
+            <li>
               <Image
                 src="/images/clients/client-06.png"
                 alt="Client"
                 width={48}
                 height={48}
-                priority
               />
-            </Link></li>
+            </li>
           </ul>
         </div>
       </section>
