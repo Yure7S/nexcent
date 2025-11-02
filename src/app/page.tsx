@@ -22,8 +22,8 @@ export default function Home() {
           </ScrollAnimation>
           <div className='hidden lg:block'>
             <Image
-              src="/images/ilustration-01.png"
-              alt="Ilustration"
+              src="/images/illustration-01.png"
+              alt="Illustration"
               width={391}
               height={407}
               className="h-[407px] min-w-[391px]"
@@ -219,14 +219,14 @@ export default function Home() {
               <div className='flex lg:items-center flex-col lg:flex-row xl:gap-3 mt-8'>
                 <ul className='flex flex-wrap sm:flex-nowrap gap-5 xl:gap-10 items-center justify-items-center w-fit'>
                   {[
-                    "/images/clients/client-01.png",
-                    "/images/clients/client-02.png",
-                    "/images/clients/client-03.png",
-                    "/images/clients/client-04.png",
-                    "/images/clients/client-05.png",
-                    "/images/clients/client-06.png"
+                    "/images/client-01.png",
+                    "/images/client-02.png",
+                    "/images/client-03.png",
+                    "/images/client-04.png",
+                    "/images/client-05.png",
+                    "/images/client-06.png"
                   ].map((src, index) => {
-                    const isThirdImage = src === "/images/clients/client-03.png";
+                    const isThirdImage = src === "/images/client-03.png";
 
                     return (
                       <li key={index} className="flex justify-center">
@@ -250,7 +250,7 @@ export default function Home() {
                 <Link className='flex items-center w-fit text-primary px-4 py-2.5 text-headline-4 font-semibold text-center justify-center gap-3' href="/">Meet all customers
                   <Image
                     src="/svg/icons/arrow-icon.svg"
-                    alt="Ilustration"
+                    alt="Illustration"
                     width={14}
                     height={14}
                   />
@@ -284,7 +284,7 @@ export default function Home() {
                 <Link className='flex items-center text-primary px-4 py-2.5 text-headline-4 font-semibold text-center mx-auto w-full justify-center gap-3' href="/">Readmore
                   <Image
                     src="/svg/icons/arrow-icon.svg"
-                    alt="Ilustration"
+                    alt="Illustration"
                     width={14}
                     height={14}
                   />
@@ -308,7 +308,7 @@ export default function Home() {
                 <Link className='flex items-center text-primary px-4 py-2.5 text-headline-4 font-semibold text-center mx-auto w-full justify-center gap-3' href="/">Readmore
                   <Image
                     src="/svg/icons/arrow-icon.svg"
-                    alt="Ilustration"
+                    alt="Illustration"
                     width={14}
                     height={14}
                   />
@@ -332,7 +332,7 @@ export default function Home() {
                 <Link className='flex items-center text-primary px-4 py-2.5 text-headline-4 font-semibold text-center mx-auto w-full justify-center gap-3' href="/">Readmore
                   <Image
                     src="/svg/icons/arrow-icon.svg"
-                    alt="Ilustration"
+                    alt="Illustration"
                     width={14}
                     height={14}
                   />
