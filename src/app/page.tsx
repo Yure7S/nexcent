@@ -8,7 +8,7 @@ export default function Home() {
       <section className="bg-silver w-full">
         <div className="max-w-container mx-auto px-10 sm:px-14 py-24 flex items-center gap-28">
           <div>
-            <h2 className="text-headline-2 md:text-headline-1 leading-headline-2 md:leading-headline-1 font-semibold line text-d-grey">Lessons and insights <span className="text-primary">from 8 years</span></h2>
+            <h2 className="text-headline-2 md:text-headline-1 leading-headline-2 md:leading-headline-1 font-semibold text-d-grey">Lessons and insights <span className="text-primary">from 8 years</span></h2>
             <p className='mt-3 body-2 text-n-grey sm:mt-4'>Where to grow your business as a photographer: site or social media?</p>
             <Button className='mt-8'>
               Register
@@ -177,6 +177,12 @@ export default function Home() {
             </Button>
           </div>
         </div>
+      </section>
+      <section className='py-8 w-full bg-silver'>
+        <h2 className='max-w-[400px] md:max-w-[887px] mb-8 w-full text-center mx-auto text-headline-2 md:text-headline-1 leading-headline-2 md:leading-headline-1 font-semibold'>Pellentesque suscipit fringilla libero eu.</h2>
+        <Button className='mt-8 mx-auto block'>
+          Get a Demo
+        </Button>
       </section>
     </>
   );
