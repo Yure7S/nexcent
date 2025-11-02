@@ -28,7 +28,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='py-10'>
+      <section className='py-10 px-3.5'>
         <h2 className='text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Our Clients</h2>
         <p className='text-n-grey body-2 text-center mb-10'>We have been working with some Fortune 500+ clients</p>
         <div>
@@ -90,10 +90,10 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      <section>
+      <section className='px-3.5'>
         <h2 className='max-w-[550px] mx-auto leading-headline-2 text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Manage your entire community in a single system</h2>
         <p className='text-n-grey body-2 text-center mb-4'>Who is Nextcent suitable for?</p>
-        <div className='flex justify-between items-center mx-auto max-w-6xl flex-wrap w-full'>
+        <div className='flex gap-9 gap-y-11 justify-center lg:justify-between items-center mx-auto max-w-6xl flex-wrap w-full'>
           <div className='shadow-2px p-6 h-[260px] rounded-lg max-w-[299px]'>
             <div className="relative w-fit mx-auto after:-z-10 after:absolute after:content-[''] after:block after:w-[50px] after:h-[50px] after:bg-tint-5 after:-top-2 after:left-1.5 after:rounded-[18px_5px_10px_5px]">
               <Image
@@ -138,8 +138,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="max-w-container mx-auto px-10 lg:px-14 py-24 flex items-center gap-4 lg:gap-12">
+      <section className='px-3.5'>
+        <div className="max-w-container mx-auto px-7 lg:px-14 py-24 flex items-center gap-4 lg:gap-12">
           <div className='hidden md:block'>
             <Image
               src="/images/illustration-02.png"
@@ -159,8 +159,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='bg-silver py-16'>
-        <div className='flex gap-y-7 w-full flex-wrap px-10 lg:px-20 max-w-container mx-auto justify-between items-center'>
+      <section className='bg-silver py-16 px-3.5'>
+        <div className='flex gap-y-7 w-full flex-wrap px-8 lg:px-20 max-w-container mx-auto justify-between items-center'>
           <div className='basis-72 grow'>
             <h2 className="text-headline-3 max-w-[408px] md:text-headline-2 leading-headline-3 md:leading-headline-2 font-semibold line text-d-grey">Helping a local <span className='text-primary'>business reinvent itself</span></h2>
             <p className='mt-2 body-3 text-n-grey'>We reached here with our hard work and dedication</p>
@@ -173,8 +173,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="max-w-container mx-auto px-10 lg:px-14 py-24 flex items-center gap-4 lg:gap-12">
+      <section className='px-3.5'>
+        <div className="max-w-container mx-auto px-7 lg:px-14 py-24 flex items-center gap-4 lg:gap-12">
           <div className='hidden md:block'>
             <Image
               src="/images/illustration-03.png"
@@ -194,7 +194,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='bg-silver'>
+      <section className='bg-silver px-3.5'>
         <div className="max-w-container mx-auto py-8 flex-col md:flex-row flex items-center gap-4 lg:gap-12">
           <div>
             <Image
@@ -269,7 +269,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='pt-12 pb-24'>
+      <section className='pt-12 pb-24 px-3.5'>
         <h2 className='text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Caring is the new marketing</h2>
         <p className='text-n-grey max-w-[628px] mx-auto body-2 text-center mb-10'>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
         <div className=' flex mb-20 justify-between items-center mx-auto max-w-6xl flex-wrap w-full'>
