@@ -27,7 +27,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       const getSizeClasses = (size: ButtonSize) => {
          const sizeMap = {
             [ButtonSize.BS]: 'px-8 py-3.5 text-lg',
-            [ButtonSize.MD]: 'px-4 py-2.5 text-base',
+            [ButtonSize.MD]: 'px-5 py-2.5 text-base',
             [ButtonSize.SM]: 'px-6 py-3 text-sm',
          };
          return sizeMap[size];

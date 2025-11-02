@@ -34,10 +34,10 @@ export function Header() {
 
   return (
     <header className=' text-black dark:text-black dark:bg-silver'>
-      <div className="max-w-container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="max-w-container mx-auto p-[22px] flex justify-between items-center">
         <Link href="/">
           <Image
-            src="/svg/logo.svg"
+            src={isDark ? "/svg/logo-white.svg" : "/svg/logo.svg"}
             alt="Nexcent"
             width={120}
             height={24}
@@ -45,26 +45,29 @@ export function Header() {
             priority
           />
         </Link>
+        
         <nav className='w-full max-w-[640px]'>
           <ul className='flex justify-between w-full items-center'>
             <li>
-              <Link href="/">Home</Link>
+              <Link className='hover:text-primary py-1.5' href="/">Home</Link>
             </li>
             <li>
-              <Link href="/">Service</Link>
+              <Link className='hover:text-primary py-1.5' href="/">Service</Link>
             </li>
             <li>
-              <Link href="/">Feature</Link>
+              <Link className='hover:text-primary py-1.5' href="/">Feature</Link>
             </li>
             <li>
-              <Link href="/">Product</Link>
+              <Link className='hover:text-primary py-1.5' href="/">Product</Link>
             </li>
             <li>
-              <Link href="/">Testimonial</Link>
+              <Link className='hover:text-primary py-1.5' href="/">Testimonial</Link>
             </li>
             <li>
-              <Link href="/">FAQ</Link>
+              <Link className='hover:text-primary py-1.5' href="/">FAQ</Link>
             </li>
+            
+            {/* Botão de tema com ícones que mudam */}
             <li>
               <button
                 onClick={toggleTheme}
@@ -92,6 +95,7 @@ export function Header() {
             </li>
           </ul>
         </nav>
+        
         <div className='flex gap-3.5'>
           <Link className='text-primary px-4 py-2.5 text-base' href="/">Login</Link>
           <Button size={ButtonSize.MD}>Sign up</Button>
