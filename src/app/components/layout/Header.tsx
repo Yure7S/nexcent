@@ -31,11 +31,11 @@ export function Header() {
   };
 
   return (
-    <header className="bg-white dark:bg-white text-black dark:text-black">
+    <header className=' text-black dark:text-black dark:bg-silver'>
       <div className="max-w-container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/">
           <Image
-            src="/images/logo.svg"
+            src="/svg/logo.svg"
             alt="Nexcent"
             width={120}
             height={24}
