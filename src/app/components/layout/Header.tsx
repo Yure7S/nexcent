@@ -172,12 +172,12 @@ export function Header() {
             {/* Botão Hamburguer */}
             <button
               onClick={toggleMobileMenu}
-              className="p-2 flex flex-col justify-center items-center w-10 h-10 rounded-lg hover:bg-silver dark:hover:bg-grey-blue transition-colors duration-200"
+              className="group p-2 flex flex-col justify-center items-center w-10 h-10 rounded-lg hover:bg-silver dark:hover:bg-primary hover:cursor-pointer transition-colors duration-200"
               aria-label="Abrir menu"
             >
-              <span className={`w-6 h-0.5 bg-d-grey dark:bg-l-grey transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`} />
-              <span className={`w-6 h-0.5 bg-d-grey dark:bg-l-grey transition-all duration-300 mt-1.5 ${isMobileMenuOpen ? 'opacity-0' : ''}`} />
-              <span className={`w-6 h-0.5 bg-d-grey dark:bg-l-grey transition-all duration-300 mt-1.5 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`} />
+              <span className={`w-6 h-0.5 bg-d-grey dark:bg-l-grey dark:group-hover:bg-black transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`} />
+              <span className={`w-6 h-0.5 bg-d-grey dark:bg-l-grey dark:group-hover:bg-black transition-all duration-300 mt-1.5 ${isMobileMenuOpen ? 'opacity-0' : ''}`} />
+              <span className={`w-6 h-0.5 bg-d-grey dark:bg-l-grey dark:group-hover:bg-black transition-all duration-300 mt-1.5 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`} />
             </button>
           </div>
         )}
@@ -207,10 +207,10 @@ export function Header() {
               </Link>
               <button
                 onClick={closeMobileMenu}
-                className="p-2 rounded-lg hover:bg-silver dark:hover:bg-grey-blue transition-colors"
+                className="group p-2 rounded-lg hover:bg-silver dark:hover:bg-primary hover:cursor-pointer transition-colors"
                 aria-label="Fechar menu"
               >
-                <svg className="w-6 h-6 text-d-grey dark:text-l-grey" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-d-grey dark:text-l-grey group-hover:text-white dark:group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
