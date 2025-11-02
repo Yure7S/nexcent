@@ -1,5 +1,5 @@
 // components/ui/button.tsx
-import { ButtonSize } from '@/enums/buttom.enum';
+import { ButtonSize } from '@/lib/enums/buttom.enum';
 import React from 'react';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {

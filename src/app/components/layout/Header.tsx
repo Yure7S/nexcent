@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '../ui/PrimaryButton';
-import { ButtonSize } from '@/enums/buttom.enum';
+import { ButtonSize } from '@/lib/enums/buttom.enum';
 
 const DESKTOP_BREAKPOINT = 1080;
 const NAV_ITEMS = [

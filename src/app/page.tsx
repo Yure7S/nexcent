@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Button } from './components/ui/PrimaryButton';
 import Link from 'next/link';
-import { ButtonSize } from '@/enums/buttom.enum';
+import { ButtonSize } from '@/lib/enums/buttom.enum';
 import { StatsCard } from './components/ui/StatsCard';
 import { ClientsSection } from './components/section/ClientsSection';
 import { ScrollAnimation } from './components/section/ScrollAnimation';
