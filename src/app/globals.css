@@ -192,3 +192,23 @@ body {
 .dark body {
   @apply bg-white text-black;
 }
+
+/* Clients animation */
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-48px * 7 - 136px * 7));
+    /* 7 logos + 7 gaps */
+  }
+}
+
+.animate-scroll-infinite {
+  animation: scroll-infinite 40s linear infinite;
+}
+
+.animate-scroll-infinite:hover {
+  animation-play-state: paused;
+}

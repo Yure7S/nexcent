@@ -3,6 +3,7 @@ import { Button } from './components/ui/primary-buttom';
 import Link from 'next/link';
 import { ButtonSize } from '@/enums/buttom.enum';
 import { StatsCard } from './components/ui/stats-card';
+import { ClientsSection } from './components/section/clients-section';
 
 export default function Home() {
   return (
@@ -28,62 +29,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='py-10 px-3.5'>
-        <h2 className='text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Our Clients</h2>
-        <p className='text-n-grey body-2 text-center mb-10'>We have been working with some Fortune 500+ clients</p>
-        <div>
-          <ul className='flex gap-[136px] items-center justify-items-center w-fit mx-auto mb-16'>
-            <li>
-              <Image
-                src="/images/client-01.png"
-                alt="Client"
-                width={48}
-                height={48}
-              />
-            </li>
-            <li>
-              <Image
-                src="/images/client-02.png"
-                alt="Client"
-                width={48}
-                height={48}
-              />
-            </li>
-            <li>
-              <Image
-                src="/images/client-03.png"
-                alt="Client"
-                width={48}
-                height={48}
-              />
-            </li>
-            <li>
-              <Image
-                src="/images/client-04.png"
-                alt="Client"
-                width={48}
-                height={48}
-              />
-            </li>
-            <li>
-              <Image
-                src="/images/client-05.png"
-                alt="Client"
-                width={48}
-                height={48}
-              />
-            </li>
-            <li>
-              <Image
-                src="/images/clients/client-06.png"
-                alt="Client"
-                width={48}
-                height={48}
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
+      <ClientsSection/>
       <section className='px-3.5'>
         <h2 className='max-w-[550px] mx-auto leading-headline-2 text-headline-3 md:text-headline-2 font-semibold text-d-grey text-center mb-2'>Manage your entire community in a single system</h2>
         <p className='text-n-grey body-2 text-center mb-4'>Who is Nextcent suitable for?</p>
