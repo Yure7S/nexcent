@@ -37,27 +37,24 @@
   --color-shade-5: #14102F;
 
   /* Tipografia - Headlines */
-  --font-size-headline-1: 4rem;
-  --line-height-headline-1: 4.75rem;
-  --font-size-headline-2: 2.25rem;
-  --line-height-headline-2: 2.75rem;
-  --font-size-headline-3: 1.75rem;
-  --line-height-headline-3: 2.25rem;
-  --font-size-headline-4: 1.25rem;
-  --line-height-headline-4: 1.75rem;
+  --text-headline-1: 4rem;
+  --spacing-headline-1: 4.75rem;
+  --text-headline-2: 2.25rem;
+  --spacing-headline-2: 2.75rem;
+  --text-headline-3: 1.75rem;
+  --spacing-headline-3: 2.25rem;
+  --text-headline-4: 1.25rem;
+  --spacing-headline-4: 1.75rem;
 
   /* Tipografia - Body Text */
-  --font-size-body-1: 1.125rem;    /* 18px */
-  --line-height-body-1: 1.75rem;   /* 28px */
-  
-  --font-size-body-2: 1rem;        /* 16px */
-  --line-height-body-2: 1.5rem;    /* 24px */
-  
-  --font-size-body-3: 0.875rem;    /* 14px */
-  --line-height-body-3: 1.25rem;   /* 20px */
-  
-  --font-size-body-4: 0.75rem;     /* 12px */
-  --line-height-body-4: 1rem;      /* 16px */
+  --font-size-body-1: 1.125rem;
+  --line-height-body-1: 1.75rem;
+  --font-size-body-2: 1rem;
+  --line-height-body-2: 1.5rem;
+  --font-size-body-3: 0.875rem;
+  --line-height-body-3: 1.25rem;
+  --font-size-body-4: 0.75rem;
+  --line-height-body-4: 1rem;
 
   /* Font Weights */
   --font-weight-regular: 400;
@@ -86,7 +83,7 @@
   --color-silver: #1E1E1E;
   --color-white: #14102F;
 
-  --color-primary: #FF74A8;
+  --color-primary: #F95894;
   --color-secondary: #CFD8DC;
 
   --color-info: #64B5F6;
@@ -111,31 +108,6 @@
   --shadow-6px: 0 6px 12px rgb(0 0 0 / 0.4);
   --shadow-8px: 0 8px 16px rgb(0 0 0 / 0.5);
   --shadow-16px: 0 16px 32px rgb(0 0 0 / 0.4);
-}
-
-/* Classes utilitárias para as headlines */
-.headline-1 {
-  font-size: var(--font-size-headline-1);
-  line-height: var(--line-height-headline-1);
-  font-weight: var(--font-weight-semibold);
-}
-
-.headline-2 {
-  font-size: var(--font-size-headline-2);
-  line-height: var(--line-height-headline-2);
-  font-weight: var(--font-weight-semibold);
-}
-
-.headline-3 {
-  font-size: var(--font-size-headline-3);
-  line-height: var(--line-height-headline-3);
-  font-weight: var(--font-weight-semibold);
-}
-
-.headline-4 {
-  font-size: var(--font-size-headline-4);
-  line-height: var(--line-height-headline-4);
-  font-weight: var(--font-weight-semibold);
 }
 
 /* Classes utilitárias para Body Text */
