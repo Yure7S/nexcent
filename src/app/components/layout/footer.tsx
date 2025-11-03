@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export function Footer() {
    return (
-      <div data-theme="light">D
+      <div data-theme="light">
          <footer className="bg-shade-5 lg:max-h-[328px]">
             <div className="max-w-7xl mx-auto px-14 py-12 pb-12">
                <div className="flex flex-wrap md:flex-nowrap justify-start md:justify-between gap-8">
@@ -125,7 +125,6 @@ export function Footer() {
                         </div>
                      </div>
                   </div>
-
                </div>
             </div>
          </footer>
