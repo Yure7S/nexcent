@@ -3,7 +3,6 @@ import './globals.css';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/footer';
 
-
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
@@ -24,7 +23,7 @@ export default function RootLayout({
         <main className="min-h-screen">
           {children}
         </main>
-        <Footer/>
+        <Footer></Footer>
       </body>
     </html>
   );
